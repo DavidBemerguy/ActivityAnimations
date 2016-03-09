@@ -1,6 +1,6 @@
 //
-//  DBSpinnerActivityView.swift
-//  DBSpinnerActivityView
+//  SpinnerActivityView.swift
+//  SpinnerActivityView
 //
 //  Created by David Bemerguy on 21/02/2016.
 //  Copyright © 2016 David Bemerguy. All rights reserved.
@@ -15,7 +15,7 @@
 import Foundation
 import UIKit
 
-public class DBSpinnerActivityView : UIView{
+public class SpinnerActivityView : UIView{
     
     // MARK: - Private constants
     
@@ -25,7 +25,7 @@ public class DBSpinnerActivityView : UIView{
     private let SpinnerFinalRadius: CGFloat = 20.0
     private let SpinnerLineWidth: CGFloat = 4.0
     private let ShadowOpacity: Float = 1.0
-
+    
     private let SpinAnimationDuration: CFTimeInterval = 1.0
     private let BlowAnimationDuration: CFTimeInterval = 0.3
     private let FadeOutAnimationDuration: CFTimeInterval = 0.3
@@ -51,10 +51,10 @@ public class DBSpinnerActivityView : UIView{
     
     - returns: A new instance of the view
     */
-    init(){
+    public init(){
         super.init(frame: CGRectZero)
     }
-
+    
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -72,7 +72,7 @@ public class DBSpinnerActivityView : UIView{
             initViews()
         }
     }
-
+    
     private func initGlobalVars(){
         
         let marginRatio: CGFloat = 0.2 // Give the circle some margin from the views borders
@@ -243,14 +243,14 @@ public class DBSpinnerActivityView : UIView{
     
     func createSpinnerOvalBezierPaths()->[CGPathRef]{
         return [createSpinnerBezierPathWithOval(SpinnerInitialRadius),
-                createSpinnerBezierPathWithOval(SpinnerOnAnimationPickRadius),
-                createSpinnerBezierPathWithOval(SpinnerFinalRadius)]
+            createSpinnerBezierPathWithOval(SpinnerOnAnimationPickRadius),
+            createSpinnerBezierPathWithOval(SpinnerFinalRadius)]
     }
     
     func createCircleArcBezierPaths()->[CGPathRef]{
         return [createCircleBezierPathWithArc(SpinnerInitialRadius, margin:circleMarginInitialFromSpinnerContainer!),
-                createCircleBezierPathWithArc(SpinnerOnAnimationPickRadius, margin: circleMarginOnAnimationPickFromSpinnerContainer!),
-                createCircleBezierPathWithArc(SpinnerFinalRadius, margin: circleMarginFinalFromSpinnerContainer!)]
+            createCircleBezierPathWithArc(SpinnerOnAnimationPickRadius, margin: circleMarginOnAnimationPickFromSpinnerContainer!),
+            createCircleBezierPathWithArc(SpinnerFinalRadius, margin: circleMarginFinalFromSpinnerContainer!)]
     }
     
     func degressToRadians(angle: Double)->CGFloat{

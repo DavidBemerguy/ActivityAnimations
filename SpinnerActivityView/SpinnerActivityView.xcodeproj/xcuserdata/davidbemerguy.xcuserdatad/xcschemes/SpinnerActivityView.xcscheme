@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B5EBE0BF1C79AFF90068B548"
-               BuildableName = "DBSpinnerActivityView.app"
-               BlueprintName = "DBSpinnerActivityView"
-               ReferencedContainer = "container:DBSpinnerActivityView.xcodeproj">
+               BlueprintIdentifier = "B51D1C351C90357000E32089"
+               BuildableName = "SpinnerActivityView.framework"
+               BlueprintName = "SpinnerActivityView"
+               ReferencedContainer = "container:SpinnerActivityView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B5EBE0BF1C79AFF90068B548"
-            BuildableName = "DBSpinnerActivityView.app"
-            BlueprintName = "DBSpinnerActivityView"
-            ReferencedContainer = "container:DBSpinnerActivityView.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B5EBE0BF1C79AFF90068B548"
-            BuildableName = "DBSpinnerActivityView.app"
-            BlueprintName = "DBSpinnerActivityView"
-            ReferencedContainer = "container:DBSpinnerActivityView.xcodeproj">
+            BlueprintIdentifier = "B51D1C351C90357000E32089"
+            BuildableName = "SpinnerActivityView.framework"
+            BlueprintName = "SpinnerActivityView"
+            ReferencedContainer = "container:SpinnerActivityView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B5EBE0BF1C79AFF90068B548"
-            BuildableName = "DBSpinnerActivityView.app"
-            BlueprintName = "DBSpinnerActivityView"
-            ReferencedContainer = "container:DBSpinnerActivityView.xcodeproj">
+            BlueprintIdentifier = "B51D1C351C90357000E32089"
+            BuildableName = "SpinnerActivityView.framework"
+            BlueprintName = "SpinnerActivityView"
+            ReferencedContainer = "container:SpinnerActivityView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
