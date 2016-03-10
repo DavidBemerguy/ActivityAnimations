@@ -100,11 +100,6 @@ public class SpinnerActivityView : UIView{
     
     // MARK: - Public
     
-    /*
-    *  We animate the bezier path of the spinner animates from 0 trough 90 degrees and back
-    *  The spinnerContentView is rotated and it gives the impression that the spinner makes a 360 degrees spin
-    */
-    
     public func startAnimation(){
         
         assert(self.superview != nil, "Must be added to a view before starting animating")
@@ -133,8 +128,7 @@ public class SpinnerActivityView : UIView{
     
     public func stopAnimation(){
         UIView.animateWithDuration(FadeOutAnimationDuration, animations: { () -> Void in
-            self.shadowDummyView!.alpha = 0
-            self.spinnerContentView!.alpha = 0;
+            self.alpha = 0
             }) { (animationDidFinish) -> Void in
                 if (animationDidFinish){
                     self.removeFromSuperview()
