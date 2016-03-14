@@ -8,23 +8,29 @@
 
 import UIKit
 import SpinnerActivityView
+import DotsActivityView
 
 class ViewController: UIViewController {
     
-    @IBOutlet var myView: UIView?
+    @IBOutlet var spinnerView: UIView?
+    @IBOutlet var dotsView: UIView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let spinner = SpinnerActivityView()
+        let dots = DotsActivityView()
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), { () -> Void in
-            self.myView!.addSubview(spinner)
-            spinner.startAnimation()            
+            self.spinnerView!.addSubview(spinner)
+            self.dotsView!.addSubview(dots)
+            spinner.startAnimation()
+            dots.startAnimation()
         })
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(6 * NSEC_PER_SEC)), dispatch_get_main_queue(), { () -> Void in
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), { () -> Void in
             spinner.stopAnimation()
+            dots.stopAnimation()
         })
         
     }

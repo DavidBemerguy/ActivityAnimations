@@ -5,6 +5,9 @@
       location = "group:SpinnerExampleProject/SpinnerExampleProject.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:DotsActivityView/DotsActivityView.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SpinnerActivityView/SpinnerActivityView.xcodeproj">
    </FileRef>
 </Workspace>

@@ -17,31 +17,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="745-Ew-Ub7">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="geL-pK-vAr">
+                                <rect key="frame" x="180" y="172" width="240" height="256"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="745-Ew-Ub7" userLabel="SpinnerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="8YE-aQ-N10"/>
+                                            <constraint firstAttribute="height" constant="128" id="OLr-9L-DNm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eo8-Oa-C1Z" userLabel="DotsView">
+                                        <rect key="frame" x="0.0" y="128" width="240" height="128"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="LWj-oA-UEO"/>
-                                    <constraint firstAttribute="width" constant="240" id="Y5q-AL-zXU"/>
+                                    <constraint firstAttribute="width" constant="240" id="KbX-B1-Raj"/>
+                                    <constraint firstAttribute="height" constant="256" id="jg3-gI-r27"/>
                                 </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="745-Ew-Ub7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qnb-XN-KBT"/>
-                            <constraint firstItem="745-Ew-Ub7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="dEo-fe-0Qp"/>
-                            <constraint firstItem="745-Ew-Ub7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="216" id="e9B-qU-wFe"/>
-                            <constraint firstItem="745-Ew-Ub7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFp-yJ-VTg"/>
+                            <constraint firstItem="geL-pK-vAr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AnW-se-Z2v"/>
+                            <constraint firstItem="geL-pK-vAr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D9t-qY-Ukv"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="dEo-fe-0Qp"/>
-                                <exclude reference="e9B-qU-wFe"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
-                        <outlet property="myView" destination="745-Ew-Ub7" id="ehQ-4d-lks"/>
+                        <outlet property="dotsView" destination="eo8-Oa-C1Z" id="ln6-O4-yb0"/>
+                        <outlet property="spinnerView" destination="745-Ew-Ub7" id="IdP-Pd-urZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

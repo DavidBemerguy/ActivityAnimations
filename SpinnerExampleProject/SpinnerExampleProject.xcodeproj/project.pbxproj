@@ -14,6 +14,7 @@
 		B51D1C5C1C90369E00E32089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51D1C581C90369E00E32089 /* LaunchScreen.storyboard */; };
 		B51D1C5D1C90369E00E32089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51D1C5A1C90369E00E32089 /* Main.storyboard */; };
 		B51D1C7A1C90519800E32089 /* SpinnerActivityView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51D1C791C90519800E32089 /* SpinnerActivityView.framework */; };
+		B51D1C9B1C91AB2B00E32089 /* DotsActivityView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51D1C9A1C91AB2B00E32089 /* DotsActivityView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B51D1C591C90369E00E32089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SpinnerExampleProject/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		B51D1C5B1C90369E00E32089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SpinnerExampleProject/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		B51D1C791C90519800E32089 /* SpinnerActivityView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpinnerActivityView.framework; path = "../../../Library/Developer/Xcode/DerivedData/Spinner-abpnbfokeiwhdoeznfbkzncvkdct/Build/Products/Debug-iphoneos/SpinnerActivityView.framework"; sourceTree = "<group>"; };
+		B51D1C9A1C91AB2B00E32089 /* DotsActivityView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DotsActivityView.framework; path = "../../../Library/Developer/Xcode/DerivedData/ActivityAnimations-drivctizrkbuzneaqncuigqjbqmf/Build/Products/Debug-iphoneos/DotsActivityView.framework"; sourceTree = "<group>"; };
 		B5EBE0C01C79AFF90068B548 /* SpinnerExampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinnerExampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51D1C9B1C91AB2B00E32089 /* DotsActivityView.framework in Frameworks */,
 				B51D1C7A1C90519800E32089 /* SpinnerActivityView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +45,7 @@
 		B5EBE0B71C79AFF90068B548 = {
 			isa = PBXGroup;
 			children = (
+				B51D1C9A1C91AB2B00E32089 /* DotsActivityView.framework */,
 				B51D1C791C90519800E32089 /* SpinnerActivityView.framework */,
 				B5EBE0C21C79AFF90068B548 /* SpinnerExampleProject */,
 				B5EBE0C11C79AFF90068B548 /* Products */,
